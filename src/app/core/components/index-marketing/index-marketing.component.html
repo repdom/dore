@@ -16,7 +16,7 @@
               </div>
               <div class="row justify-content-center">
                 <div class="mt-4 pt-2">
-                  <a href="javascript:void(0)" class="btn btn-primary mt-2 mr-2">Cuéntanos qué necesitas</a>
+                  <a href="javascript:void(0)" class="btn btn-primary mt-2 mr-2"  [ngxScrollTo]="'#contactanos'">Cuéntanos qué necesitas</a>
                 </div>  
               </div>
         </div>
@@ -91,37 +91,39 @@
     <!--end row-->
   </div>
   <!--end container-->
-  <div class="container mt-100 mt-60">
-    <div class="row align-items-center">
-      <div class="col">
-        <img class="rounded img-fluid float-left" src="assets/images/marketing/abstract-background.jpg" alt="">
+  <div id="filosofia">
+    <div class="container mt-100 mt-60">
+      <div class="row align-items-center">
+        <div class="col">
+          <img class="rounded img-fluid float-left" src="assets/images/marketing/abstract-background.jpg" alt="">
+        </div>
+        <!--end col-->
+        <!--consciencia, compromiso, sostenibilidad,-->
+        <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+          <div class="section-title ml-lg-5">
+            <h4 class="title mb-4">Misión</h4>
+            <p class="text-muted">Apoyar a marcas comprometidas con su crecimiento sostenible a mejorar sus
+              procesos de comunicación interna y visibilizar su esencia en sus momentos claves.</p>
+          </div>
+          <div class="section-title ml-lg-5">
+            <h4 class="title mb-4">Visión</h4>
+            <p class="text-muted">Brindar todas las soluciones necesarias a las marcas de toda Latinoamérica que estén
+              comprometidas a mejorar sus procesos de comunicación interna y externa. </p>
+          </div>
+          <div class="section-title ml-lg-5">
+            <h4 class="title mb-4">Valores</h4>
+            <ul>
+              <li class="mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>Consciencia</li>
+              <li class="mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>Compromiso</li>
+              <li class="mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>Sostenibilidad</li>
+              <li class="mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>Transparencia</li>
+              <li class="mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>Responsabilidad</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <!--end col-->
-      <!--consciencia, compromiso, sostenibilidad,-->
-      <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
-        <div class="section-title ml-lg-5">
-          <h4 class="title mb-4">Misión</h4>
-          <p class="text-muted">Apoyar a marcas comprometidas con su crecimiento sostenible a mejorar sus
-            procesos de comunicación interna y visibilizar su esencia en sus momentos claves.</p>
-        </div>
-        <div class="section-title ml-lg-5">
-          <h4 class="title mb-4">Visión</h4>
-          <p class="text-muted">Brindar todas las soluciones necesarias a las marcas de toda Latinoamérica que estén
-            comprometidas a mejorar sus procesos de comunicación interna y externa. </p>
-        </div>
-        <div class="section-title ml-lg-5">
-          <h4 class="title mb-4">Valores</h4>
-          <ul>
-            <li class="mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>Consciencia</li>
-            <li class="mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>Compromiso</li>
-            <li class="mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>Sostenibilidad</li>
-            <li class="mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>Transparencia</li>
-            <li class="mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>Responsabilidad</li>
-          </ul>
-        </div>
-      </div>
+      <!--end row-->
     </div>
-    <!--end row-->
   </div>
   <!--end container-->
 </section>
@@ -229,7 +231,40 @@
 </section>
 <!--end section-->
 <!-- Faq End -->
-
+<section class="section bg-light">
+  <div id="contactanos" class="container">
+    <div class="row justify-content-center">
+      <div class="col-5 align-content-center">
+        <h1 class="heading">Contáctanos</h1>
+      </div>
+    </div>
+      <form>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <div class="form-group">
+              <label for="txtNombre">Su nombre</label>
+              <input type="text" class="form-control" id="txtNombre" placeholder="John/Ana Doe...">
+            </div>
+            <div class="form-group">
+              <label for="txtEmail">Correo eléctronico</label>
+              <input type="email" class="form-control" id="txtEmail" placeholder="nombre@ejemplo.com">
+            </div>
+            <div class="form-group">
+              <label for="txtTelefono">Teléfono</label>
+              <input type="email" class="form-control" id="txtTelefono" placeholder="8090000000">
+            </div>  
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <label for="txtMensaje">Cuentanos!</label>
+              <textarea class="form-control" id="txtMensaje" rows="3"></textarea>
+            </div>  
+            <a href="javascript:void(0)" class="btn btn-primary">Enviar</a>
+          </div>
+        </div>
+      </form>
+  </div>
+</section>
 <!-- Back to top -->
 <a href="javascript: void(0);" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"
   [ngxScrollTo]="'#home'">
