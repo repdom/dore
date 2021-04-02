@@ -47,18 +47,33 @@
     <!--end row-->
 
     <div class="row">
-      <div class="col-lg-4 col-md-6 mt-4 pt-2">
-        <div class="media key-feature align-items-center p-3 rounded shadow">
-          <div class="icon text-center rounded-circle mr-3">
-            <i-feather name="message-circle" class="fea icon-ex-md text-primary"></i-feather>
-          </div>
-          <div class="media-body">
-            <h4 class="title mb-0">Comunicación efectiva para mejorar el ambiente laboral</h4>
+      <div id="accordion" class="accordion">
+        <div class="col pt-3">
+          <div class="card media key-feature align-items-center p-3 rounded shadow bg-light">
+            <div class="card-header" id="headingOne">
+                <div class="row mx-auto">
+                  <div class="icon text-center rounded-circle">
+                    <i-feather name="message-circle" class="fea icon-ex-md text-primary"></i-feather>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="title mb-0">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#cardOne" aria-expanded="false" aria-controls="cardOne">
+                       Comunicación efectiva para mejorar el ambiente laboral
+                      </a>
+                    </h4>
+                </div>
+              </div>
+            </div>
+            <div id="cardOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                Completa tus datos y te contactamos para que tengas la primera asesoría gratuita
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!--end col-->
-
+    </div>
+    <div class="row">
       <div class="col-lg-4 col-md-6 mt-4 pt-2">
         <div class="media key-feature align-items-center p-3 rounded shadow">
           <div class="icon text-center rounded-circle mr-3">
